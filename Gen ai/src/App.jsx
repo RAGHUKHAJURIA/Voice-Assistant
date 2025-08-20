@@ -31,7 +31,7 @@ function App() {
     setIsLoading(true);
     try {
       // IMPORTANT: Changed the URL to a relative path for Vercel deployment
-      const res = await fetch('/api/generate', {
+      const res = await fetch('https://voice-assistant-rouge-beta.vercel.app/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt: text }),
